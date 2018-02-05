@@ -1,0 +1,105 @@
+@media all and (max-width: 450px) {
+    body{
+        font-size: 20%;
+        overflow-x: hidden;
+    }
+}
+
+body{
+    font-family:cursive;
+    font-style:italic;
+    font-size: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 10px;
+    color:white;
+    background-image: url("../images/background.jpg");
+}
+
+header{
+    flex-basis: 100%;
+    height:75px;
+    border-style:solid;
+    border-width: 1px;
+    border-color:dimgrey;
+}
+
+
+footer {
+    flex-basis: 100%;
+    text-align: center;
+    border-style:solid;
+    border-width: 1px;
+    border-color:dimgrey;
+}
+
+.aside{
+    flex-basis: auto;
+    flex-grow: 0.5;
+    border-style:solid;
+    border-width: 1px;
+    border-color:dimgrey;
+
+}
+h1:hover{
+    transition: all 4s;
+    transform:rotate3d(1,0,0,360deg);
+    transform-style:preserve-3d;
+    color:red;
+}
+
+
+#main{
+    color:white;
+    flex-basis: 0%;
+    flex-grow: 10;
+    height: 500px;
+    border-style:solid;
+    text-align: center;
+    border-width: 1px;
+    border-color:dimgrey;
+}
+
+.header > h1 {
+    text-align: center;
+}
+
+#main > h1 {
+    text-align: center;
+}
+
+#blackcard:hover {
+    transform-style: preserve-3d;
+    transform:rotateZ(360deg);
+}
+
+#redcard:hover {
+    transform-style: preserve-3d;
+    transform:rotateZ(360deg);
+}
+
+#blackcard {
+    transition: all 2s;
+    height:150px;
+}
+
+#redcard {
+    transition: all 2s;
+    height:150px;
+}
+
+a:hover {
+    color:red;
+}
+
+a {
+    color:white;
+}
+
+#play {
+    position:absolute;
+    left:650px;
+    bottom: 550px;
+}
+
