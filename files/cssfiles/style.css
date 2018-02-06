@@ -20,8 +20,10 @@ body{
 header{
     flex-basis: 100%;
     height:75px;
+    padding: 10px;
     border-style:solid;
-    border-width: 1px;
+    border-width: 8px;
+    border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
 }
 
@@ -29,20 +31,24 @@ header{
 footer {
     flex-basis: 100%;
     text-align: center;
+    padding: 10px;
     border-style:solid;
-    border-width: 1px;
+    border-width: 8px;
+    border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
 }
 
 .aside{
     flex-basis: auto;
-    flex-grow: 0.5;
+    flex-grow: 1;
+    padding: 10px;
     border-style:solid;
-    border-width: 1px;
+    border-width: 8px;
+    border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
 
 }
-h1:hover{
+.header > h1:hover{
     transition: all 4s;
     transform:rotate3d(1,0,0,360deg);
     transform-style:preserve-3d;
@@ -52,20 +58,18 @@ h1:hover{
 
 #main{
     color:white;
-    flex-basis: 0%;
+    flex-basis: auto;
     flex-grow: 10;
     height: 500px;
-    border-style:solid;
+    padding: 10px;
     text-align: center;
-    border-width: 1px;
+    border-style:solid;
+    border-width: 8px;
+    border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
 }
 
 .header > h1 {
-    text-align: center;
-}
-
-#main > h1 {
     text-align: center;
 }
 
@@ -93,13 +97,22 @@ a:hover {
     color:red;
 }
 
+
+a:visited {
+    color:yellow;
+}
+
 a {
     color:white;
 }
 
-#play {
-    position:absolute;
-    left:650px;
-    bottom: 550px;
+#play > img:hover {
+    transform:scale(2,2);
+}
+
+#play > img{
+    position:relative;
+    bottom:-150px;
+    transition: 2s;
 }
 
