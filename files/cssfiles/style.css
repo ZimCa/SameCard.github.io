@@ -15,6 +15,12 @@ body{
     padding: 10px;
     color:white;
     background-image: url("../images/background.jpg");
+    background-size:cover;
+}
+
+#search{
+    flex-basis: 100%;
+    padding: 10px;
 }
 
 header{
@@ -46,7 +52,6 @@ footer {
     border-width: 8px;
     border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
-
 }
 .header > h1:hover{
     transition: all 4s;
@@ -67,6 +72,9 @@ footer {
     border-width: 8px;
     border-image:url("../images/border.png") 1%;
     border-color:dimgrey;
+    background-image: url("../images/desk.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .header > h1 {
